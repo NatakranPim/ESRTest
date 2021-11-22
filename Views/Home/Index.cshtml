@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    var data = ViewBag.Message;
+}
+<h3>testInt: @data.testInt</h3>
+<h3>testString: @data.testString</h3>
+<h3>testString2: @data.testString2</h3>
+<script>
+    var result = "@data.resultLogic1"
+    const ar_result = result.split(",");
+    console.log("Result Logic - 1");
+    for (const results of ar_result) {
+        console.log(results);
+    }
+</script>
